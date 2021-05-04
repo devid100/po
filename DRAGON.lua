@@ -1078,12 +1078,12 @@ end
 if text == 'تحديث السورس' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/devid100/po/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.0}')
+send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.9}')
 dofile('DRAGON.lua')  
 end
 if text == 'الاصدار ✪' and DevSoFi(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ☞︙ اصدار سورس هيفو \n ☞︙ الاصدار »{v2.5.0}')
+send(msg.chat_id_, msg.id_,' ☞︙ اصدار سورس هيفو \n ☞︙ الاصدار »{v2.5.9}')
 end
 if text == "ضع اسم للبوت ✪" and DevSoFi(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2340,7 +2340,7 @@ return false
 end
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/devid100/po/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.0}')
+send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.9}')
 dofile('DRAGON.lua')  
 end
 
