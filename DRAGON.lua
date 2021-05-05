@@ -927,7 +927,7 @@ else
 keyboard = {
 {'مبرمج السورس','بوت التواصل'},
 {'قناة السورس'},
-{'تويت','صراحه'},
+{'تويت'},
 {'المطور','انا مين'},
 }
 end
@@ -1140,6 +1140,53 @@ if #list == 0 then
 t = " ⏎︙ لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
+end
+if text == 'المطور' or text == 'مطور' then
+local TEXT_SUDO = database:get(bot_id..'TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
+tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
+local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
+end,nil)
+end
+end
+if text == 'باندا مبرمج السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[DEV BANDA](t.me/de_vi_d)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𓆩B𝗮ꪀ𝗱A𓆪', url="t.me/de_vi_d"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'قناه السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[CH](t.me/A_V_I_R_A_1)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'قناه السورس️️', url="t.me/A_V_I_R_A_1"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'بوت تواصل' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[TWL](t.me/de_vi_d25BOT)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𓆩𝗧𝘄𝗮𝘀𝗼𝗹𓆪', url="t.me/de_vi_d25BOT"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == ("قائمه العام ✪") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GBan:User')
