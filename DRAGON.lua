@@ -178,7 +178,7 @@ print(serpent.block(value, {comment=false}))
 end 
 local runapp = sudos.token
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-sudo_users = {SUDO,1718785294,1360140225,1681991286,1645553841}   
+sudo_users = {SUDO,1718785294,1360140225,1681991286,1770288756}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -11605,7 +11605,7 @@ end
 ---------------------- الاوامر الجديدة
 if text == 'الاوامر' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,' ☞︙ ')
+send(msg.chat_id_, msg.id_,' نت عضو يصحبي مش هينفع ')
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
