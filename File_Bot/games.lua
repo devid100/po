@@ -606,5 +606,5 @@ end
 
 end
 return {
-Poyka = games
+DRAGON = games
 }
