@@ -904,7 +904,7 @@ local keyboard = {
 {'تفعيل البوت الخدمي ✪','تعطيل البوت الخدمي ✪'},
 {'مسح الجروبات ✪','مسح المشتركين ✪'},
 {'جلب نسخه الاحتياطيه ✪'},
-{'تحديث السورس ✪','الاصدار ✪'},
+{'تحديث السورس','الاصدار ✪'},
 {'معلومات السيرفر ✪'},
 {'الغاء ✪'},
 }
@@ -1152,7 +1152,7 @@ sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
 end
 end
-if text == 'باندا مبرمج السورس' and DevSoFi(msg) then
+if text == 'باندا مبرمج السورس' then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [DEV BANDA](t.me/de_vi_d)
@@ -1164,7 +1164,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'قناه السورس' and DevSoFi(msg) then
+if text == 'قناه السورس' then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [CH](t.me/A_V_I_R_A_1)
@@ -1176,7 +1176,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'بوت تواصل' and DevSoFi(msg) then
+if text == 'بوت تواصل' then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [TWL](t.me/de_vi_d25BOT)
