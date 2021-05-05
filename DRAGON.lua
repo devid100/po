@@ -178,7 +178,7 @@ print(serpent.block(value, {comment=false}))
 end 
 local runapp = sudos.token
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-sudo_users = {SUDO,1718785294,1360140225,1605682553,1645553841}   
+sudo_users = {SUDO,1718785294,1360140225,1681991286,1645553841}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -270,11 +270,11 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1786821030) then  
+if tonumber(user_id) == tonumber(1770288756) then  
 var = true  
 elseif tonumber(user_id) == tonumber(1718785294) then
 var = true  
-elseif tonumber(user_id) == tonumber(1605682553) then
+elseif tonumber(user_id) == tonumber(1681991286) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -309,11 +309,11 @@ return var
 end 
 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1786821030) then  
-var = 'المبرمج باندا'
+if tonumber(user_id) == tonumber(1770288756) then  
+var = 'كينج التلجرام'
 elseif tonumber(user_id) == tonumber(1360140225) then
 var = 'مبرمـج السورس'
-elseif tonumber(user_id) == tonumber(1605682553) then
+elseif tonumber(user_id) == tonumber(1681991286) then
 var = 'ملك التلجرام'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -684,7 +684,7 @@ end
 function Addmp3(msg,chat,kkl,ffrr)
 local eer = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..kkl)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..eer.result.file_path,ffrr) 
-sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.")  
+sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.")  
 os.execute('rm -rf ./'..ffrr) 
 end
 function Addsticker(msg,chat,Sd,rre)
@@ -3534,7 +3534,7 @@ if tonumber(result.sender_user_id_) == tonumber(1718785294) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع حظر مطور السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1605682553) then  
+if tonumber(result.sender_user_id_) == tonumber(1681991286) then  
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع حظر ملك التلجرام عام")
 return false 
 end
@@ -3583,7 +3583,7 @@ if result.id_ == tonumber(1718785294) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا يمكنك حظر مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(1605682553) then
+if result.id_ == tonumber(1681991286) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا يمكنك حظر ملك التلجرام \n")
 return false 
 end
@@ -3626,7 +3626,7 @@ if tonumber(userid) == tonumber(1718785294) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع حظر مطور السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1605682553) then  
+if tonumber(userid) == tonumber(1681991286) then  
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع حظر ملك التلجرام عام")
 return false 
 end
@@ -3670,7 +3670,7 @@ if tonumber(result.sender_user_id_) == tonumber(1718785294) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع كتم مطور السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1605682553) then  
+if tonumber(result.sender_user_id_) == tonumber(1681991286) then  
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع كتم ملك التلجرام عام")
 return false 
 end
@@ -3718,7 +3718,7 @@ if result.id_ == tonumber(1718785294) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا يمكنك كتم مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(1605682553) then
+if result.id_ == tonumber(1681991286) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا يمكنك كتم ملك التلجرام \n")
 return false 
 end
@@ -3757,7 +3757,7 @@ if tonumber(userid) == tonumber(1360140225) then
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1605682553) then  
+if tonumber(userid) == tonumber(1681991286) then  
 send(msg.chat_id_, msg.id_, " ☞︙ لا تسطيع كتم ملك التلجرام عام")
 return false 
 end
@@ -7869,7 +7869,7 @@ local Text = [[
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = 'مبرمج السورس', url="t.me/ahmedyad200"}},
+{{text = 'مبرمج السورس', url="t.me/de_vi_d"}},
 {{text = 'فلابي بيرد', url="https://t.me/awesomebot?game=FlappyBird"},{text = 'تحداني فالرياضيات',url="https://t.me/gamebot?game=MathBattle"}},   
 {{text = 'لعبه دراجات', url="https://t.me/gamee?game=MotoFX"},{text = 'سباق سيارات', url="https://t.me/gamee?game=F1Racer"}}, 
 {{text = 'تشابه', url="https://t.me/gamee?game=DiamondRows"},{text = 'كره القدم', url="https://t.me/gamee?game=FootballStar"}}, 
@@ -7882,7 +7882,7 @@ keyboard.inline_keyboard = {
 {{text = 'Astrocat', url="https://t.me/gamee?game=Astrocat"},{text = 'Skipper', url="https://t.me/gamee?game=Skipper"}},  
 {{text = 'WorldCup', url="https://t.me/gamee?game=PocketWorldCup"},{text = 'GeometryRun', url="https://t.me/gamee?game=GeometryRun"}},  
 {{text = 'Ten2One', url="https://t.me/gamee?game=Ten2One"},{text = 'NeonBlast2', url="https://t.me/gamee?game=NeonBlast2"}},  
-{{text = 'مبرمج السورس', url="t.me/ahmedyad200"}},
+{{text = 'مبرمج السورس', url="t.me/de_vi_d"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
@@ -8345,7 +8345,7 @@ local text =
 ' }\n'..' ☞︙  الايدي » { '..idgp..
 ' }\n'..' ☞︙  الايدي بالصوره » { '..idph..
 ' }\n'..' ☞︙  الرفع » { '..setadd..
-' }\n'..' ☞︙  الحظر » { '..banm..' }\n\n≪━━━━━━ＨＥＶＯ━━━━━━≫\n ☞︙ قناة سورس هيفو ↓\n [🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1) \n'
+' }\n'..' ☞︙  الحظر » { '..banm..' }\n\n≪━━━━━━ＨＥＶＯ━━━━━━≫\n ☞︙ قناة سورس هيفو ↓\n [🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -11618,37 +11618,37 @@ end
 return false
 end
 local Text =[[
-*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝙾𝚆𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-*1️⃣◂ اوامر الحمايه .*
-*2️⃣◂ اوامر تعطيل ~ تفعيل .*
-*3️⃣◂ اوامر ضع ~ اضف  .*
-*4️⃣◂ اوامر مسح ~ مسح .*
-*5️⃣◂ اوامر تنزيل+رفع+التغير .*
-*6️⃣◂ اوامر الجروب .*
-*7️⃣◂ اوامر التسليه .*
-*8️⃣◂ اوامر مطور البوت .*
-*9️⃣◂ اوامر مطور الاساسي .*
-*🔟◂ اوامر الاعضاء .*
+*❶◂ اوامر الحمايه .*
+*❷◂ اوامر تعطيل ~ تفعيل .*
+*❸◂ اوامر ضع ~ اضف  .*
+*❹◂ اوامر مسح ~ مسح .*
+*❺◂ اوامر تنزيل+رفع+التغير .*
+*❻◂ اوامر الجروب .*
+*❼◂ اوامر التسليه .*
+*❽◂ اوامر مطور البوت .*
+*❾◂ اوامر مطور الاساسي .*
+*❿◂ اوامر الاعضاء .*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '𖤐𓆩𝐇𝐄𝐕𝐎𓆪𖤐', url="t.me/A_V_I_R_A_1"},
@@ -11682,7 +11682,7 @@ local Text =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11719,7 +11719,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'━━━━━━\nاضغط علي الاسم ليتم نسخه\n≪━━━━━━ＨＥＶＯ━━━━━━≫ٴ\n☞︙ ➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤ ')
+send(msg.chat_id_, msg.id_, t..'━━━━━━\nاضغط علي الاسم ليتم نسخه\n≪━━━━━━ＨＥＶＯ━━━━━━≫ٴ\n☞︙ ➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤ ')
 end
 if text == "غنيلي" then
 data,res = https.request('https://forhassan.ml/Black/audios.php')
@@ -11930,21 +11930,21 @@ local Teext =[[
 ☞︙ الجهات
 ☞︙ الاشعارات
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -11998,21 +11998,21 @@ local Teext =[[
 ☞︙ اوامر التسليه
 ☞︙ صورتي 
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12049,21 +12049,21 @@ local Teext =[[
 ☞︙ وصف
 ☞︙ تكرار + عدد
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12109,21 +12109,21 @@ local Teext =[[
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
 ☞︙ الاوامر المضافه ( لعرض الاوامر المضافه ) 
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12174,21 +12174,21 @@ local Teext =[[
 ☞︙ تغير امر الاوامر
 ☞︙ تغير امر م1 ~ الئ م10
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12258,21 +12258,21 @@ local Teext =[[
 ☞︙ الساعه
 ☞︙ التاريخ
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12338,21 +12338,21 @@ local Teext =[[
 ☞︙ تاك للمتزوجين
 ☞︙ مسح المتزوجين
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12382,21 +12382,21 @@ local Teext =[[
 ☞︙ اسم ~ ايدي + بوت غادر 
 ☞︙ اذاعه 
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12473,21 +12473,21 @@ local Teext =[[
 ☞︙ مسح المشتركين
 ☞︙ مسح الجروبات
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾.](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12530,21 +12530,21 @@ local Teext =[[
 ☞︙ شنو رئيك بهاي بالرد
 ☞︙ تحب هذا
 ≪━━━━━━ＨＥＶＯ━━━━━━≫
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12591,16 +12591,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
@@ -12618,37 +12618,37 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝙾𝚆𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-*1️⃣◂ اوامر الحمايه .*
-*2️⃣◂ اوامر تعطيل ~ تفعيل .*
-*3️⃣◂ اوامر ضع ~ اضف  .*
-*4️⃣◂ اوامر مسح ~ مسح .*
-*5️⃣◂ اوامر تنزيل+رفع+التغير .*
-*6️⃣◂ اوامر الجروب .*
-*7️⃣◂ اوامر التسليه .*
-*8️⃣◂ اوامر مطور البوت .*
-*9️⃣◂ اوامر مطور الاساسي .*
-*🔟◂ اوامر الاعضاء .*
+*❶◂ اوامر الحمايه .*
+*❷◂ اوامر تعطيل ~ تفعيل .*
+*❸◂ اوامر ضع ~ اضف  .*
+*❹◂ اوامر مسح ~ مسح .*
+*❺◂ اوامر تنزيل+رفع+التغير .*
+*❻◂ اوامر الجروب .*
+*❼◂ اوامر التسليه .*
+*❽◂ اوامر مطور البوت .*
+*❾◂ اوامر مطور الاساسي .*
+*❿◂ اوامر الاعضاء .*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"},
 },
 {
 {text = '𖤐𓆩𝐇𝐄𝐕𝐎𓆪𖤐', url="t.me/A_V_I_R_A_1"},
@@ -12829,7 +12829,7 @@ local Teext =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
