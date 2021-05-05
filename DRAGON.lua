@@ -2622,7 +2622,7 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then 
 local Text = [[ 
-𖤐𓆩𝐇𝐄𝐕𝐎𓆪𖤐
+☉ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐒𝐎𝐔𝐑𝐂𝐄 𝐇𝐄𝐕𝐎 ☉
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = { 
