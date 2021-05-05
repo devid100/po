@@ -3991,9 +3991,10 @@ send(msg.chat_id_, msg.id_," ☞︙ عذرا الملف لايدعم سورس ه
 end
 return false
 end
-if text == "مسح الملفات" and DevSoFi(msg) then
+if text == "مسح الملفات" or text == 'تحديث المتجر' and DevSoFi(msg) then
+os.execute("rm -fr getfile.json")
 os.execute("rm -fr File_Bot/*")
-send(msg.chat_id_,msg.id_," ☞︙ تم مسح الملفات")
+send(msg.chat_id_,msg.id_," ☞︙ تم تحديث المتجر و مسح الملفات")
 return false
 end
 
