@@ -2622,12 +2622,14 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then 
 local Text = [[ 
-𖤐𓆩𝐇𝐄𝐕𝐎𓆪𖤐
+☉ 𝐖𝐄𝑳𝐂𝐎𝐌𝐄 𝐓𝐎 𝐀𝐕𝐀𝐄𝐑☉️
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس', url="t.me/A_V_I_R_A_1"}}, 
-{{text = 'قناه السورس', url="t.me/A_V_I_R_A_1"}}, 
+{{text =  🇪🇬 صاحب التلجرام 🇪🇬 , url="t.me/de_vi_d"}},
+{{text =  💪 دونجل الجامد 💪 , url="t.me/UU_DON"}},
+{{text =  🦸 بطل التلجرام 🦸 , url="t.me/Paplo_black"}},
+{{text =  💌 قناه السورس 💌 , url="t.me/A_V_I_R_A_1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
