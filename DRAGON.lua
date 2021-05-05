@@ -11605,8 +11605,7 @@ end
 ---------------------- الاوامر الجديدة
 if text == 'الاوامر' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,' ❃∫︙ هاذا الامر خاص بالادمنيه
-❃∫︙ ارسل {م10} لعرض اوامر الاعضاء ')
+send(msg.chat_id_, msg.id_,' هاذا الامر خاص بالادمنيه فقط ')
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
