@@ -178,7 +178,7 @@ print(serpent.block(value, {comment=false}))
 end 
 local runapp = sudos.token
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-sudo_users = {SUDO,1726705278,1465250253,1761565061,1360140225}   
+sudo_users = {SUDO,1726705278,1465250253,1761565061}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -276,8 +276,6 @@ elseif tonumber(user_id) == tonumber(1465250253) then
 var = true  
 elseif tonumber(user_id) == tonumber(1761565061) then
 var = true  
-elseif tonumber(user_id) == tonumber1360140225) then
-var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then
@@ -315,8 +313,6 @@ if tonumber(user_id) == tonumber(1726705278) then
 var = 'المبرمج سوريا'
 elseif tonumber(user_id) == tonumber(1465250253) then
 var = 'مبرمـج السورس'
-elseif tonumber(user_id) == tonumber(1360140225) then
-var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(1761565061) then
 var = 'روح قلب سوريا'
 elseif tonumber(user_id) == tonumber(SUDO) then
