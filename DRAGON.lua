@@ -1326,8 +1326,8 @@ if text == '/start' and DevSoFi(msg) then
 local Text = '◉انت الان المطور الاساسي في البوت \n ◉سورس افايره\n ◉يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/A_V_I_R_A_1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'مطور البوت 𖠕', url="http://t.me/"..sudos.UserName}}, 
+{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_V_I_R_A_1/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
