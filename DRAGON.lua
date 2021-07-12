@@ -2069,10 +2069,10 @@ if result.photos_[0] then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مطور البوت 𖠕', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ↯', url = "https://t.me/"..data.username_.."?startgroup=new"},
+{text = 'اضف البوت الي مجموعتك 𖠕', url = "https://t.me/"..data.username_.."?startgroup=new"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4206,43 +4206,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_V_I_R_A_1/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
-if text == 'مميزات'  or text == 'المميزات' then
-local Text = [[ 
- ─────── ◉ ───────
-◉ لستخدام المميزات اتبع مايلي ..↑↓
- ─────── ◉ ───────
-◉ قران ← لعرض الميزه
-◉ اذكار ← لعرض الميزه
-◉ الصلاوات ← لعرض الميزه
-◉ متحركه ← لعرض الميزه
-◉ غنيلي ← لعرض الميزه
-◉ استوري ← لعرض الميزه
-◉ تصميم ← لعرض الميزه
-◉ حساب العمر ← لعرض الميزه
-◉ حساب الوزن ← لعرض الميزه
-◉ نسبه الحب ← لعرض الميزه
-◉ نسبه الغباء ← لعرض الميزه
-◉ جمالي ← لعرض الميزه
-◉ افلام ← لعرض الميزه
-◉ اغاني ← لعرض الميزه
-◉ روايات ← لعرض الميزه
-◉ ثيم ← لعرض الميزه
-◉ همسه ← لعرض الميزه
-◉ معني + اسمك ← لعرض الميزه
-◉ خلفيات ← لعرض الميزه
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [ＡＶＩＲＡ](t.me/A_V_I_R_A_1) 
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-]]
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/D_V1_D/69&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-
 if text == 'العاب افايره' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
 local Text = [[  
  ࿈ اهلا في قائمه الالعاب المتطوره سورس افايره ࿈ 
