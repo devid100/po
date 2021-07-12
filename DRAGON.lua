@@ -2069,10 +2069,10 @@ if result.photos_[0] then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مطور البوت 𖠕', url="http://t.me/"..sudos.UserName},
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك 𖠕', url = "https://t.me/"..data.username_.."?startgroup=new"},
+{text = 'اضف البوت الي مجموعتك ↯', url = "https://t.me/"..data.username_.."?startgroup=new"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
